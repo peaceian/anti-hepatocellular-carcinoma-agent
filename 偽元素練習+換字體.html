@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>偽元素選擇器練習</title>
+    <style>
+        /*@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,400;1,200&display=swap');
+        h1, pre, p {font-family: 'Kanit', sans-serif;}*/
+        @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');/*must be on the top ! it is needed the first on the top but not limiting another @import.*/
+        body {background-color: hsl(2, 57%, 40%);
+            background-image: 
+            repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+            repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+            repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);}
+        /*h1.title::before {content:"🔯";}/*在h1前加入表情符號
+        h1.title::after {content:"🔯";}/*在h1後加入表情符號*/
+
+        p.abstract::first-line {color:#ff0000;}
+        p.abstract::first-letter {color: #ff0000;font-size: 200%;}
+        h1.abstract::first-letter {color: #ff0000;font-size: 200%;}
+        h1.intro::first-letter {color: #ff0000;font-size: 200%;}
+
+        body {width: 1200px;margin: 0 auto;}
+
+
+
+
+
+        h1, pre, p, h2 {font-family: 'Mochiy Pop One', sans-serif;font-variant:small-caps;}
+
+        p {font-style:oblique;font-weight: bold;}
+
+        p.abstract, p.intro {text-align:justify; }
+        h1.title {font-size: 200%;text-shadow: -1px 1px white, 1px -1px black;color:lightslategrey;}
+        h1.abstract, h1.intro, h2.intro ,h2{ text-shadow: 1px 1px white, -1px -1px #333;color: dodgerblue;}/*embossed effect*/
+        p.abstract, p.intro {text-shadow: -1px 0px white, 1px 0px white, 0px 1px white, 0px -1px white;color:midnightblue; }/*contour effect*/
+        p {text-shadow: 0 0 5px yellow;color: hotpink;line-height: 2.0;word-spacing: 5px;white-space:normal ;text-indent: 30px;}/*neon effect*/
+
+    </style>
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">-->
+    <!--font link needs be in the <head></head>-->
+
+</head>
+<body>
+    <article>
+    <h1 class="title">Investigation of anti-hepatocellular carcinoma agent, Chinese Herbal Medicine M1</h1>
+    <h1 class="abstract">Abstract</h1>
+    <p class="abstract">
+        Hepatocellular Carcinoma (HCC) is one of higher malignant in cancers of human in the world. In addition, 
+    HCC mortality rate for 20 years is the leading cause of cancer death in Taiwan. The primary carcinogenic factors 
+    includes hepatitis virus infection and other are caused by alcohol abuse, and ingestion of carcinogen such as aflatoxin, etc.
+     HCC has the characteristics of high level metastasis, angiogenesis, and recurrence after surgery.
+    
+        In this study, we focused on how to effectively prevent metastasis and angiogenesis of HCC. Recently, it becomes important to use the Chinese Herbal
+       Medicine (CHM) as a therapeutic strategy for the treatment of diseases. Here, we found that among 10 kinds of CHMs, 
+       M1 could inhibit the cell migration at the dose less than half concentration of IC<sub>50</sub> (the half maximal inhibitory of 
+       concentration). M1 significantly inhibited the expression of Receptor Tyrosine Kinase, Epidermal Growth Factor Receptor (EGFR)
+       , and downstream, Ras, ERK, and Snail. Furthermore, another downstream pathway protein, Protein Kinase B (AKT), mammalian target 
+       of rapamycin (mTOR), Hypoxia-inducible factor 1-alpha (HIF1-α), and Vascular Endothelial Growth Factor A (VEGFA) were also 
+       inhibited. And the Matrix Metalloproteinases (MMPs), including MMP-2, MMP-9, which play an important role in metastasis 
+       mechanism, were also inhibited by M1. Epithelial–mesenchymal transition (EMT) markers, such as E-cadherin and N-cadherin, 
+       were effective altered by M1 treatment.
+     In the xenograft mice model, we observed the tumors growth sizes, weight, and protein
+        expressions were effectively inhibited by M1. In conclusions, we demonstrate that M1 has an inhibitory effect to suppress 
+        angiogenesis and metastasis of HCC in vitro and in vivo.</p>
+    <p class="keyword">Key Word: Hepatocellular Carcinoma, Chinese Herbal Medicine, Angiogenesis, Metastasis, EGFR, MMPs</p>
+
+    <h1 class="intro">Introduction</h1>
+    <h2 class="intro">1. Hepatocellular carcinoma (HCC)</h2>
+    <p class="intro">
+        HCC has a high prevalence in Asia and North Africa because of the high frequency of chronic hepatitis B virus and hepatitis C virus 
+        infections in these areas<sup>1-3</sup>. Furthermore, uptake of aflatoxin, alcohol abuse, diabetes, obesity, and metabolic disorders are also 
+        the key risk factors<sup>1,3,4</sup>. The radical therapy is usually used to treat HCC in early-stage, but the occurrence and the metastasis cause 
+        the poor prognosis<sup>2-5</sup>. In recent years, sorafenib is the first molecule drug to show clinical application for liver cancer<sup>2</sup>. 
+        However, sorafenib has a count of restrictions, including the development of resistance and adverse effects<sup>6</sup>.
+    </p>
+    <h2>2. Epidermal growth factor receptor (EGFR)</h2>
+    <p class="intro">
+        Overexpression of EGFR is associated with liver cirrhosis and HCC<sup>7</sup>, and the high expression of EGER has been implicated in HCC-related 
+        tumor metastasis and poor patient survival<sup>7-9</sup>. Furthermore, the activation of EGFR causes the activation of downstream effectors, such 
+        as the Protein Kinase B (PKB, as known as AKT)/mammalian target of rapamycin (mTOR) pathway and Rat sarcoma (Ras)/extracellular 
+        signal–regulated kinases (Ras/ERK) pathway<sup>10,11</sup>. In clinical trials, gefitinib has been demonstrated discouraged results, so that the 
+        investigations of effective inhibitors of EGFR have been emerged as the current trend<sup>8</sup>.
+    </p>
+    <h2>3. Angiogenesis</h2>
+    <p class="intro">
+        Vascular Endothelial Growth Factors (VEGFs) play important roles in angiogenesis in cancers, and VEGF-A is a major member in VEGFs family that 
+        binds to VEGF receptors of the cell membrane to stimulate downstream streams<sup>12-17</sup>. For example, the activation of downstream effectors 
+        including AKT, mTOR, 4E-binding protein 1 (4EBP1), and Hypoxia-inducible factor 1-alpha (HIF1-α), regulates angiogenesis, migration, and invasion 
+        of tumor cells<sup>13,16,18-20</sup>. In addition, Matrix metalloproteinases (MMPs), have influences on matrix degradation, invasion, metastasis,
+         and cause angiogenesis during tumor progression<sub>13,15,18</sub>. Therefore, VEGFs and MMPs could be the targets to reduce the
+         angiogenesis<sup>13,19</sup>.
+    </p>
+    <h2>4. Epithelial–mesenchymal transition (EMT) / Metastasis</h2>
+    <p class="intro">
+        EMT has been reported in various cancer progressions, such as tumor growth, invasion, and metastasis<sup>21-24</sup>. The features of EMT are the 
+        disruption of intercellular contacts, matrix remodeling, invasion and migration through altering the cell-cell adhesion<sup>21,24,25</sup>. Ras/ERK 
+        pathway is the main mediator arising migration of tumor cells through the suppression of E-cadherin, a calcium dependent cell-cell adhesion molecule 
+        that plays a critical role in keeping epithelial cell feature, but the upregulation of N-cadherin, which is the marker of mesenchymal type cells
+        <sup>21,22,24,26</sup>. Furthermore, the high expression of snail downregulates epithelial genes but activates mesenchymal genes to induce the 
+        transformation of cell<sup>25</sup>. Similarly, MMPs also promote the metastasis process though degrading the ECM leading to the mesenchymal-type 
+        cells migration<sup>21,23</sup>. Therefore, it is important to suppress metastasis by inhibiting EMT and MMPs to reach an effective anti-cancer 
+        strategy.
+    </p>
+    <h2>5. Chinese Herbal Medicines (CHMs)</h2>
+    <p class="intro">
+        CHMs are known to mitigate clinical symptoms, prevent metastasis as well as recurrence, and delay progression of tumors<sup>27</sup>. For example,
+         curcumin, the active principle of <u>Curcuma longa</u>, has multiple functions such as antioxidant, anti-inflammatory, and anti-carcinogenic activities 
+         that inhibit the cell proliferation, cell cycle and apoptosis<sup>28</sup>. <u>Songyou Yin</u> possesses anti-metastatic activity by inhibiting
+          the expressions of MMP-2 and VEGFs<sup>29</sup>. Additionally, <u>Coptidis Rhizoma</u> inhibits tumor cell migration through reducing F-actin 
+          polymerization<sup>30</sup>. Therefore, researches on CHMs toward cancer therapy have attracted much attention to develop as an alternative
+           therapeutic strategy.
+    </p>
+    <h2>6. HCC Huh-7 cell line</h2>
+    <p class="intro">
+       <u> P53 </u> mutation is a carcinogenesis important factor<sup>31</sup>. Huh-7 cell line, a well-differential hepatocellular carcinoma, has a <u>p53</u> 
+       gene mutation at codon 220 (A:T→G:C) from a 57 years old male in Japan<sup>6</sup>. Huh-7 cells do not have virus DNA so that the virus interference 
+       can be removed, and have been used for the liver cancer study<sup>6</sup>.
+    </p>
+    <h2>7. Research objectives of present investigation</h2>
+    <p class="intro">
+        In this study, we purposed to identify effective CHMs that could inhibit the liver tumor growth, such as migration, EMT, proliferation, and angiogenesis.
+         Using IC<sub>50 MTT</sub>/ IC<sub>50 wound healing</sub> ratio, we selected the most effective one from 10 kinds of CHMs. <i>In vitro</i>, the liver 
+         cancer proteins, EGFR and downstream pathways such as AKT and ERK signalings were determined. <i>In vivo</i>, mice xenograft models and the tumors marker 
+         were examined to demonstrate the anti-cancer ability of CHM.
+    </p>
+    <h2></h2>
+    <p></p>
+    <h2></h2>
+    <p></p>
+    <h2></h2>
+    <p></p>
+    </article>
+</body>
+</html>
