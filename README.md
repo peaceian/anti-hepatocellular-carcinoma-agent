@@ -1,4 +1,4 @@
-# pseudo-elements-selector training
+# pseudo-elements-selector training with thesis
 
 
 html: &lt;h1&gt;, &lt;p&gt;, &lt;em&gt;, &lt;sup&gt;<br>
